@@ -1,8 +1,13 @@
 package com.gnq.base.domain;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
 import java.io.Serializable;
 
-public class User implements Serializable {
-    private static final long serialVersionUID = 5470360986820532011L;
-
+@Data
+@TableName("t_user")
+public class User {
+    private Long id;
+    private String nickName;
 }

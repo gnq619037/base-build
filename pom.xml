@@ -12,6 +12,7 @@
         <module>base-build-model</module>
         <module>base-build-persistence</module>
         <module>base-build-service</module>
+        <module>base-build-admin</module>
     </modules>
 
     <properties>
@@ -29,6 +30,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
         <!--lombok-->
@@ -81,6 +87,8 @@
                 <artifactId>mybatis-plus</artifactId>
                 <version>3.2.0</version>
             </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 </project>

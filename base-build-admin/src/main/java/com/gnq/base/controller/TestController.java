@@ -20,4 +20,14 @@ public class TestController {
         System.out.println(1/0);
         throw new BaseException(1, "");
     }
+
+    @GetMapping("/fail2")
+    public void test2(){
+        System.out.println("test2");
+    }
+
+    @GetMapping("/fail3")
+    public void test3(){
+        System.out.println("test3");
+    }
 }

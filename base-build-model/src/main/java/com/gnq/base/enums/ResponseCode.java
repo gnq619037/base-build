@@ -5,7 +5,7 @@ public enum ResponseCode {
     SYSTEM_ERROR(-1, "系统异常"),
     SUCCESS(0, "成功"),
     FAIL(1, "失败"),
-    VIEW_PARAMS_ERROR(2, "参数不合规"),
+    PARAMS_ERROR(2, "参数不合规"),
     SERVICE_ERROR(3, "服务端异常"),
     NO_LOGIN(5, "未登录"),
     NO_PERMISSION(403, "没有操作权限");

@@ -1,4 +1,4 @@
-package com.gnq.base.config;
+package com.gnq.base.shiro;
 
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;

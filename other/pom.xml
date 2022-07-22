@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base-build-service</artifactId>
+    <artifactId>other</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,27 +18,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.gnq.base</groupId>
-            <artifactId>base-build-model</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.gnq.base</groupId>
-            <artifactId>base-build-persistence</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.gnq.base</groupId>
-            <artifactId>other</artifactId>
+            <groupId>com.gangling.finance</groupId>
+            <artifactId>gl-finance-api</artifactId>
             <version>1.0-SNAPSHOT</version>
             <optional>true</optional>
         </dependency>
-
-
-
     </dependencies>
-
-
 </project>

@@ -22,6 +22,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Slf4j
+
+
 @Configuration
 @ConditionalOnProperty(name = "shiro.switch", havingValue = "on", matchIfMissing = true)
 public class ShiroConfig {

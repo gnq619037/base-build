@@ -8,6 +8,13 @@ import com.gnq.base.BaseResponse;
 import com.gnq.base.domain.User;
 import com.gnq.base.test.TestService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,4 +57,42 @@ public class TestController {
         log.error("ce");
         System.out.println("测试："+(1/a));
     }
+
+//    public void testHttlp(){
+//        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+//        // 创建Get请求
+//        HttpGet httpGet = new HttpGet("http://localhost:12345/doGetControllerOne");
+//
+//        // 响应模型
+//        CloseableHttpResponse response = null;
+//        try {
+//            // 由客户端执行(发送)Get请求
+//            response = httpClient.execute(httpGet);
+//            // 从响应模型中获取响应实体
+//            HttpEntity responseEntity = response.getEntity();
+//            System.out.println("响应状态为:" + response.getStatusLine());
+//            if (responseEntity != null) {
+//                System.out.println("响应内容长度为:" + responseEntity.getContentLength());
+//                System.out.println("响应内容为:" + EntityUtils.toString(responseEntity));
+//            }
+//        } catch (ClientProtocolException e) {
+//            e.printStackTrace();
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } finally {
+//            try {
+//                // 释放资源
+//                if (httpClient != null) {
+//                    httpClient.close();
+//                }
+//                if (response != null) {
+//                    response.close();
+//                }
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    }
 }

@@ -6,6 +6,9 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.gnq.base.domain.User;
 import com.gnq.base.mapper.UserMapper;
 import com.gnq.base.test.TestService;
+import com.gnq.base.test.TestTwoService;
+import com.gnq.test.OtherTest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -14,8 +17,12 @@ import java.util.List;
 @Service
 public class TestServiceImpl implements TestService {
 
-    @Resource
+//    @Resource
     UserMapper userMapper;
+
+
+    @Autowired
+    TestTwoService testTwoService;
 
     @Override
     public List<User> getAllUser() {

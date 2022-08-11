@@ -1,8 +1,5 @@
 package com.gnq.test;
 
-import com.gangling.finance.api.IRedisGeneratorSeqService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 /**
  * @Desc:
@@ -13,5 +10,4 @@ import org.springframework.stereotype.Service;
 //@Service
 public class OtherTest {
 //    @Autowired
-    IRedisGeneratorSeqService iRedisGeneratorSeqService;
 }
